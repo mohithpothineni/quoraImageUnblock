@@ -38,11 +38,11 @@ function assigner (elements, callback, options) {
 }
 
 function new_long_answers_configurer (_) {
-    old_len = long_answers.length
+    let old_len = long_answers.length
     long_answers = document.querySelectorAll(".q-relative.spacing_log_answer_content")
     
-    new_len = long_answers.length
-    new_answers = Object.values(long_answers).slice(old_len)
+    let new_len = long_answers.length
+    let new_answers = Object.values(long_answers).slice(old_len)
 
     assigner(new_answers, simulate_click, [])
 }
