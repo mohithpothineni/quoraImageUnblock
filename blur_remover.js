@@ -1,4 +1,3 @@
-
 var long_answers = []
 
 var all_answers = document.getElementsByClassName(
